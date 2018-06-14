@@ -1,0 +1,35 @@
+.chrome-notification {
+    background-color: rgba(81, 195, 245, 0.5);
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index:9999;
+    position: fixed !important;
+    top: 90% !important;
+    left: 80% !important;
+
+}
+
+.chrome-notification img {
+    width: 25%;
+    height: 100%;
+}
+
+.chrome-notification h2 {
+    font-size: 20px !important;
+    float: left;
+    height: 100%;
+    width: 75%;
+    text-align: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:monospace;
+
+}
+.chrome-notification *{
+    z-index:99999 !important;
+}
