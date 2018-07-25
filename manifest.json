@@ -1,7 +1,7 @@
 {
 
   "name": "Prevent Reload",
-  "version": "0",
+  "version": "1.0",
   "description": "Show browser width",
   "background": {
                  "persistent": false,
