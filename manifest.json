@@ -1,7 +1,7 @@
 {
 
   "name": "Prevent Reload",
-  "version": "0",
+  "version": "1.0",
   "description": "Prevent a page from reloading in one simple click. Specifically useful for preserving an inspector stylesheet.",
   "background": {
                  "persistent": false,
@@ -11,6 +11,12 @@
     "activeTab",
     "tabs"
   ],
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
   "manifest_version": 2,
   "browser_action": {
     "name": "Manipulate DOM",
