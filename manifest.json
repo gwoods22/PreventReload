@@ -1,39 +1,23 @@
 {
-
-  "name": "Prevent Reload",
-  "version": "1.0",
-  "description": "Prevent a page from reloading in one simple click. Specifically useful for preserving an inspector stylesheet.",
-  "background": {
-                 "persistent": false,
-                 "scripts": ["background.js"]
-                 },
-  "permissions": [
-    "activeTab",
-    "tabs"
-  ],
-  "icons": {
-    "16": "icon16.png",
-    "32": "icon32.png",
-    "48": "icon48.png",
-    "128": "icon128.png"
-  },
-  "manifest_version": 2,
-  "browser_action": {
-    "name": "Manipulate DOM",
-    "default_icon": {
-      "16": "icon16.png",
-      "32": "icon32.png"
-    }
-  },
-  "content_scripts": [ {
-    "js": [ "jquery.min.js" ],
-    "css": ["customStyles.css"],
-    "matches": [ "http://*/*", "https://*/*"]
-  }],
-  "icons": {
-    "16": "icon16.png",
-    "32": "icon32.png",
-    "48": "icon48.png",
-    "128": "icon128.png"
-  }
+    "name": "Prevent Reload",
+    "version": "1.1",
+    "description": "Prevent a page from reloading in one simple click. Specifically useful for preserving an inspector stylesheet.",
+    "icons": {
+        "16": "icon16.png",
+        "32": "icon32.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["activeTab", "scripting"],
+    "manifest_version": 3,
+    "action": {"This": "is needed for some reason"},
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "css": ["custom-styles.css"]
+        }
+    ]
 }
